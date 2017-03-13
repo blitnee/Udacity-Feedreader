@@ -62,7 +62,7 @@ $(function() {
 
     });
 
-    describe('Initial Entries', function() {
+describe('Initial Entries', function() {
 
         /* For async load
          */
@@ -74,12 +74,14 @@ $(function() {
          * completes and there is at least one entry.
          */
         it('loadFeed fx completes, entries filled', function() {
-            var container = $('.feed');
+            var feedContainer = $('.feed .entry');
 
-            expect(container.length).toBeGreaterThan(0);
+            expect(feedContainer.length).toBeGreaterThan(0);
+
          });
 
     });
+
 
     describe('New Feed Selection', function() {
         var firstFeed;
